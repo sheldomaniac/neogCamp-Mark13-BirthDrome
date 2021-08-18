@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans:wght@300&family=Sacramento&family=Source+Sans+Pro:wght@200;400&display=swap');
+
+:root{
+    --color1:rgba(235, 235, 235, 0.67);
+    --color2: #F8485E;
+    --color3: #171717;
+    --color4: white;
+    --color5 : white;
+}
+
+main{
+    min-height: 75vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+html{
+    margin:0;
+    padding: 0; 
+}
+
+header{
+    background-color: var(--color2);
+    padding: 1rem;
+    min-height: 6vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin:1rem 1rem 1rem 1rem;
+}
+
+
+.birthday-lucky, .source-code{
+    text-align: center;
+    color: var(--color5);
+    margin: 1rem;
+    font-size: 1.8rem;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+
+body{
+    
+    text-align: center;
+    margin: 0%;
+    background-color: var(--color4);
+    font-family: Helvetica, Arial, sans-serif;
+}
+#privacy-message{
+    width: auto;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 3px 3px 3px 3px;
+    color: #005599;
+    background-color: #BBEEFF;
+}
+
+h2{
+    color: var(--color2);
+    font-size: 2.3rem;
+    
+}
+
+#cookie-acceptance, #lucky-number-button{
+    margin: 0.5rem auto 0.5rem auto;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    padding: 0.6rem;
+    border-radius: 0.5rem ;
+    box-shadow: transparent;
+    color:var(--color5);
+    font-weight: 300;
+}
+
+#cookie-acceptance{
+    margin: 2vh;
+    background-color: #005599;
+}
+
+#lucky-number-button{
+    margin: 2vh;
+    background-color: var(--color2);
+}
+
+main div{
+    margin: 3vh auto;
+}
+
+textarea{
+    min-width: 50%;
+    min-height: 30vh;
+    margin: auto;
+    text-align: center;
+    font-family: "Source Sans Pro",Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 1.8rem;
+}
+
+#date-of-birth, #lucky-number{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bad-news{
+    color: #D63301;
+	background-color: #FFCCBA;
+}
+
+.good-news{
+    color: #4F8A10;
+	background-color: #DFF2BF;
+}
+
+
+footer{
+	display: flex;
+	flex-direction: column;
+    position: relative;
+    bottom: 0%;
+    width: 100%;
+    margin: none;
+    background-color: transparent;
+    padding: 1rem 0;
+    border-radius: 1rem 1rem 0 0;
+    color: var(--color2);
+    min-height: 6vh;
+}
+
+.footer-nav{
+    margin:1rem 1rem 1rem 1rem;
+    display: flex;
+    bottom: 0%;
+    justify-content: space-around;
+    width: 60%;
+    margin: auto;
+	
+}
+
+.navLinks{
+	display: flex;
+	justify-content: space-evenly;
+    list-style: none;
+    float: right;
+    vertical-align: middle;
+    width: 60%;
+	right: 0;
+}
+
+	
+.footer-text{
+    text-align: center;
+    margin: 0.8rem;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.social-media{
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.fb-images{
+    width: 2rem;
+}
+
+.fb-images:hover{
+    transform: scale(1.15);
+}
+
+.feedback-resume{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+	text-decoration: none;
+	color: var(--color2);
+    font-family:  Helvetica, Arial, sans-serif;
+    font-size: 1.8rem;
+}
+.feedback-resume:hover{
+    transform: scale(1.15);
+	text-decoration: underline;
+}
