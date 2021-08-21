@@ -1,19 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans:wght@300&family=Sacramento&family=Source+Sans+Pro:wght@200;400&display=swap');
 
+
 :root{
     --color1:rgba(235, 235, 235, 0.67);
-    --color2: #F8485E;
-    --color3: #171717;
-    --color4: white;
+    --color2: #3EDBF0;
+    --color3: #77ACF1;
+    --color4: #3EDBF0;
     --color5 : white;
+    
 }
 
 main{
     min-height: 75vh;
-    width: 60vw;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
+    
 }
 
 html{
@@ -25,6 +24,7 @@ header{
     background-color: var(--color2);
     padding: 1rem;
     min-height: 6vh;
+    
 }
 
 a {
@@ -38,7 +38,7 @@ nav{
 }
 
 
-.birthday-lucky, .source-code{
+.palindrome-birthday, .source-code{
     text-align: center;
     color: var(--color5);
     margin: 1rem;
@@ -48,79 +48,11 @@ nav{
 
 
 body{
-    
     text-align: center;
     margin: 0%;
-    background-color: var(--color4);
+    background-color: var(--color5);
     font-family: Helvetica, Arial, sans-serif;
 }
-#privacy-message{
-    width: auto;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 3px 3px 3px 3px;
-    color: #005599;
-    background-color: #BBEEFF;
-}
-
-h2{
-    color: var(--color2);
-    font-size: 2.3rem;
-    
-}
-
-#cookie-acceptance, #lucky-number-button{
-    margin: 0.5rem auto 0.5rem auto;
-    font-family: sans-serif;
-    font-size: 1.2rem;
-    padding: 0.6rem;
-    border-radius: 0.5rem ;
-    box-shadow: transparent;
-    color:var(--color5);
-    font-weight: 300;
-}
-
-#cookie-acceptance{
-    margin: 2vh;
-    background-color: #005599;
-}
-
-#lucky-number-button{
-    margin: 2vh;
-    background-color: var(--color2);
-}
-
-main div{
-    margin: 3vh auto;
-}
-
-textarea{
-    min-width: 50%;
-    min-height: 30vh;
-    margin: auto;
-    text-align: center;
-    font-family: "Source Sans Pro",Helvetica, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    font-size: 1.8rem;
-}
-
-#date-of-birth, #lucky-number{
-    font-size: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.bad-news{
-    color: #D63301;
-	background-color: #FFCCBA;
-}
-
-.good-news{
-    color: #4F8A10;
-	background-color: #DFF2BF;
-}
-
 
 footer{
 	display: flex;
@@ -129,10 +61,10 @@ footer{
     bottom: 0%;
     width: 100%;
     margin: none;
-    background-color: transparent;
+    background-color: var(--color2);
     padding: 1rem 0;
     border-radius: 1rem 1rem 0 0;
-    color: var(--color2);
+    color: var(--color5);
     min-height: 6vh;
 }
 
@@ -180,16 +112,70 @@ footer{
     transform: scale(1.15);
 }
 
-.feedback-resume{
+.portfolio-page{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 	text-decoration: none;
-	color: var(--color2);
+	color: var(--color5);
     font-family:  Helvetica, Arial, sans-serif;
     font-size: 1.8rem;
 }
-.feedback-resume:hover{
+.portfolio-page:hover{
     transform: scale(1.15);
 	text-decoration: underline;
+}
+
+.nav-p{
+	float: left;
+}
+
+.navLinks a{
+    color: var(--color5);
+    margin: 1rem;
+}
+
+.navLinks a:hover{
+    text-decoration: underline;
+}
+
+#check-palindrome{
+    margin: 0.5rem auto 0.5rem auto;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    padding: 0.6rem;
+    border-radius: 0.3rem;
+    background-color: var(--color3);
+    color:var(--color5);
+    font-weight: 300;
+}
+
+#check-palindrome:hover{
+    background-color: var(--color4);
+    text-decoration: underline;
+}
+
+#final-result{
+    color: var(--color3);
+}
+
+table{
+    width: 40%;
+    
+    
+    margin: auto;
+}
+tr{
+    height: 10vh;
+}
+
+td{
+    text-align: right;
+    font-size: 1.2rem;
+}
+
+td input{
+    min-width: 20vw;
+    height: 8vh;
+    font-size: 1.2rem;
 }
